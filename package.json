@@ -1,0 +1,29 @@
+{
+  "name": "playlist",
+  "version": "1.0.0",
+  "description": "playlist ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "star": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcag/playList.git"
+  },
+  "author": "Tiago Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tcag/playList/issues"
+  },
+  "homepage": "https://github.com/tcag/playList#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "env": "^0.0.2",
+    "express": "^4.18.2",
+    "mongoose": "^7.1.0",
+    "nodemon": "^2.0.22"
+  }
+}
