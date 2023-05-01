@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "star": "node index",
+    "start": "node index",
     "dev": "nodemon index"
   },
   "repository": {
