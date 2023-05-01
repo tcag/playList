@@ -13,58 +13,61 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li> <span class="material-icons"> music_note </span> </li>
-            <li> <a href="/admin"><i class="bi bi-gear"></i></a> </li>
-        </ul>
-    </nav>
-    <section id="player">
-        <h1>Playlist</h1>
-        <div> <img id="currentImg" src="/img/musicoff.jpg" alt="">
-            <h2 id="currentName">Titulo</h2>
-            <p id="currentArtist">Artista</p>
-        </div>
-        <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Nome</th>
-                        <th>Artista</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <% playlist.forEach((music)=> { %> <tr class="musics">
-                            <td><img src="<%= music.linkImage %>" alt="Imagem da musica"></td>
-                            <td>
-                                <%= music.name %>
-                            </td>
-                            <td>
-                                <%= music.author %>
-                            </td>
-                            <td> <audio  src="<%= music.linkMusic %>"></audio> </td>
+    <div id="container-principal">
+        <nav>
+            <ul>
+                <li> <span class="material-icons"> music_note </span> </li>
+                <li> <a href="/admin"><i class="bi bi-gear"></i></a> </li>
+            </ul>
+        </nav>
+        <section id="player">
+            <h1>Playlist</h1>
+            <div> <img id="currentImg" src="/img/musicoff.jpg" alt="">
+                <h2 id="currentName">Titulo</h2>
+                <p id="currentArtist">Artista</p>
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Nome</th>
+                            <th>Artista</th>
+                            <th></th>
                         </tr>
-                        <% }) %>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <section id="controls">
-        <i id="prev-control" class="bi bi-skip-start-fill"></i>
-        <i id="play-control" class="bi bi-play-fill"></i>
-        <i id="next-control" class="bi bi-skip-end-fill"></i>
-
-        <span id="current-duration">00:00</span>
-        <input id="progressbar" type="range" min="0" max="0" step="1">
-        <span id="total-duration">00:00</span>
-        <i id="vol-icon" class="bi bi-volume-up-fill"></i>
-        <input id="volume" type="range" min="0" max="100" step="1">
-
-    </section>
-    <script src="/script.js"></script>
+                    </thead>
+                    <tbody>
+                        <% playlist.forEach((music)=> { %> <tr class="musics">
+                                <td><img src="<%= music.linkImage %>" alt="Imagem da musica"></td>
+                                <td>
+                                    <%= music.name %>
+                                </td>
+                                <td>
+                                    <%= music.author %>
+                                </td>
+                                <td> <audio  src="<%= music.linkMusic %>"></audio> </td>
+                            </tr>
+                            <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    
+        <section id="controls">
+            <i id="prev-control" class="bi bi-skip-start-fill"></i>
+            <i id="play-control" class="bi bi-play-fill"></i>
+            <i id="next-control" class="bi bi-skip-end-fill"></i>
+    
+            <span id="current-duration">00:00</span>
+            <input id="progressbar" type="range" min="0" max="0" step="1">
+            <span id="total-duration">00:00</span>
+            <i id="vol-icon" class="bi bi-volume-up-fill"></i>
+            <input id="volume" type="range" min="0" max="100" step="1">
+    
+        </section>
+        <script src="/script.js"></script>
+    </div>
+   
 </body>
 
 </html>
