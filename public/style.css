@@ -327,95 +327,96 @@ div#btn-confirm a#yes:hover {
 }
 
 @media screen and (max-width: 776px) {
-
   #container-principal {
-   width: 90%;
-   margin: auto; 
- }
+    width: 90%;
+    margin: auto;
+  }
 
- section#player {
-   padding: 0; 
-   height:auto;
- }
+  section#player {
+    padding: 0;
+    height: auto;
+  }
 
- section#player h1 {
-   padding: 10px;
-   font-size: 1.5rem;
- }
+  section#player h1 {
+    padding: 10px;
+    font-size: 1.5rem;
+  }
 
- section#player div img#currentImg {
-   width: auto;
-   height: 5rem;
- }
+  section#player div img#currentImg {
+    width: auto;
+    height: 5rem;
+  }
 
- tbody td#cover {
-   width: auto;
- }
- 
- tbody .musicDescription {
-   padding: 5px;
-   font-size: 0.7rem;
- }
+  tbody td#cover {
+    width: auto;
+  }
 
- section#player table {
-   width: auto;
- }
+  tbody .musicDescription {
+    padding: 5px;
+    font-size: 0.7rem;
+  }
 
- section#controls {
-   width: 90%;
-   padding: 2px;
-   margin-bottom: 10px;
-   border-radius: 2em;    
- }
+  section#player table {
+    width: auto;
+  }
 
- section#controls span#current-duration,
- section#controls span#total-duration,
- section#controls i#vol-icon {
-   padding: 5px;
- }
+  section#controls {
+    width: 90%;
+    padding: 2px;
+    margin-bottom: 10px;
+    border-radius: 2em;
+    position: relative;
+    margin-top: 2rem;
+  }
 
- section#controls i {
-   font-size: 2rem;
- }
- 
- section#controls input#progressbar {
-   width: 10%;
- }
+  section#controls span#current-duration,
+  section#controls span#total-duration,
+  section#controls i#vol-icon {
+    padding: 5px;
+  }
 
- form {
-   width: auto; 
- }
+  section#controls i {
+    font-size: 2rem;
+  }
 
- section#add h2 {
-   padding: 10px;
-   margin: 0;
- }
+  section#controls input#progressbar {
+    width: 10%;
+  }
 
- section#player div h2#currentName {
-   margin: 0;
-   padding: 0.2rem;
-   font-size: 1.5rem;
- }
+  form {
+    width: auto;
+  }
 
- td#actions a {
-   padding: 0.5rem;
- }
+  section#add h2 {
+    padding: 10px;
+    margin: 0;
+  }
 
- a#edit {
-   margin: 2px;
- }
+  section#player div h2#currentName {
+    margin: 0;
+    padding: 0.2rem;
+    font-size: 1.5rem;
+  }
 
- section#modal div#card p {
-   padding: 1rem;
-   font-size: 1rem;
- }
- 
- section#modal div#card div#btn-confirm {
-   justify-content: space-evenly;
- }
- 
- section#modal div#card div#btn-confirm a {
-   font-size: 1rem;
-   padding: 0.1rem;
- }
+  td#actions a {
+    padding: 0.5rem;
+  }
+
+  a#edit {
+    margin: 2px;
+  }
+
+  section#modal div#card p {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  section#modal div#card div#btn-confirm {
+    justify-content: space-evenly;
+  }
+
+  section#modal div#card div#btn-confirm a {
+    font-size: 1rem;
+    padding: 0.1rem;
+  }
 }
