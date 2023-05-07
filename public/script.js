@@ -8,20 +8,20 @@ let isPlaying = false;
 controls.addEventListener("click", (event) => {
   const audios = [];
   let music = {};
-    const musics =
-      event.composedPath()[2].childNodes[3].childNodes[5].childNodes[1]
-        .childNodes[3].childNodes;
-    musics.forEach((item) => {
-      if (item.nodeName != "#text") {
-        music.name = item.childNodes[3].childNodes[0].data;
-        music.artist = item.childNodes[5].childNodes[0].data;
-        music.image = item.childNodes[1].childNodes[0].currentSrc;
-        music.audio = item.childNodes[7].childNodes[1];
-        audios.push(music);
-        music = {};
-      }
-    });
-  
+  const musics =
+    event.composedPath()[3].childNodes[3].childNodes[5].childNodes[1]
+      .childNodes[3].childNodes;
+
+  musics.forEach((item) => {
+    if (item.nodeName != "#text") {
+      music.name = item.childNodes[3].childNodes[0].data;
+      music.artist = item.childNodes[5].childNodes[0].data;
+      music.image = item.childNodes[1].childNodes[0].currentSrc;
+      music.audio = item.childNodes[7].childNodes[1];
+      audios.push(music);
+      music = {};
+    }
+  });
 
   function updateDataMusic() {
     currentMusic = audios[index];
