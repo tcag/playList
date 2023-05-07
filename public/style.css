@@ -162,6 +162,7 @@ td#actions a {
   border-radius: 0.3rem;
   transition: all 0.2s ease-in-out;
 }
+
 a#edit {
   margin: 10px;
 }
@@ -326,75 +327,95 @@ div#btn-confirm a#yes:hover {
 }
 
 @media screen and (max-width: 776px) {
+
   #container-principal {
-    width: 80%;
-    margin: auto;
-  }
-  section#player {
-    padding: 0;
-  }
+   width: 90%;
+   margin: auto; 
+ }
 
-  section#player h1 {
-    padding: 10px;
-  }
+ section#player {
+   padding: 0; 
+   height:auto;
+ }
 
-  div h2#currentName {
-    margin: 0;
-  }
-  section#player div img#currentImg {
-    width: 5rem;
-    height: 5rem;
-  }
+ section#player h1 {
+   padding: 10px;
+   font-size: 1.5rem;
+ }
 
-  section#player table {
-    width: auto;
-  }
-  section#controls {
-    width: 80%;
-    padding: 2px;
-    margin-bottom: 10px;
-    border-radius: 2em;
-  }
+ section#player div img#currentImg {
+   width: auto;
+   height: 5rem;
+ }
 
-  section#controls i {
-    font-size: 2rem;
-  }
-  section#controls input#progressbar {
-    width: 10%;
-  }
+ tbody td#cover {
+   width: auto;
+ }
+ 
+ tbody .musicDescription {
+   padding: 5px;
+   font-size: 0.7rem;
+ }
 
-  form {
-    width: auto;
-  }
-  section#add h2 {
-    padding: 10px;
-    margin: 0;
-  }
-  section#add {
-    padding: 0;
-  }
-  section#player h2 {
-    margin: 0;
-    padding: 20px;
-  }
+ section#player table {
+   width: auto;
+ }
 
-  td#actions a {
-    padding: 0.5rem;
-  }
+ section#controls {
+   width: 90%;
+   padding: 2px;
+   margin-bottom: 10px;
+   border-radius: 2em;    
+ }
 
-  a#edit {
-    margin: 2px;
-  }
+ section#controls span#current-duration,
+ section#controls span#total-duration,
+ section#controls i#vol-icon {
+   padding: 5px;
+ }
 
-  section#modal div#card p {
-    padding: 1rem;
-    font-size: 1rem;
-  }
-  section#modal div#card div#btn-confirm {
-    justify-content: space-evenly;
-  }
-  section#modal div#card div#btn-confirm a {
-    font-size: 1rem;
-    padding: 0.1rem;
-  }
+ section#controls i {
+   font-size: 2rem;
+ }
+ 
+ section#controls input#progressbar {
+   width: 10%;
+ }
+
+ form {
+   width: auto; 
+ }
+
+ section#add h2 {
+   padding: 10px;
+   margin: 0;
+ }
+
+ section#player div h2#currentName {
+   margin: 0;
+   padding: 0.2rem;
+   font-size: 1.5rem;
+ }
+
+ td#actions a {
+   padding: 0.5rem;
+ }
+
+ a#edit {
+   margin: 2px;
+ }
+
+ section#modal div#card p {
+   padding: 1rem;
+   font-size: 1rem;
+ }
+ 
+ section#modal div#card div#btn-confirm {
+   justify-content: space-evenly;
+ }
+ 
+ section#modal div#card div#btn-confirm a {
+   font-size: 1rem;
+   padding: 0.1rem;
+ }
 }
